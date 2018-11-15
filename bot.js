@@ -14,7 +14,20 @@ if (message.content.startsWith(prefix + 'setstream')) {
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 }
+if (message.content.startsWith(prefix + 'setgame')) {
+  client.user.setGame(argresult);
+    message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
+} 
 
+if (message.content.startsWith(prefix + 'setwatch')) {
+client.user.setActivity(argresult, {type:'WATCHING'});
+    message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
+} 
+if (message.content.startsWith(prefix + 'setlisteng')) {
+client.user.setActivity(argresult, {type:'LISTENING'});
+    message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
+}
+  
 });
 
 
