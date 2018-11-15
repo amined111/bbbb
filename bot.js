@@ -12,7 +12,7 @@ client.on('message', message => {
 if (message.content.startsWith(prefix + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/amine12a");
      console.log('test' + argresult);
-    message.channel.sendMessage(`Streaming: **${argresult}`)
+    message.channel.sendMessage(`**:white_check_mark:  : ${argresult}**`)
 }
 if (message.content.startsWith(prefix + 'setgame')) {
   client.user.setGame(argresult);
